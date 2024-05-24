@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .List {
+            display: flex;
+            gap: 8px;
+            padding: 16px;
+            list-style: none;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+        }
+
+        .List::-webkit-scrollbar {
+            display: none;
+        }
+
+        .Item {
+            flex-shrink: 0;
+            width: 80%;
+            height: 90vh;
+            background-color: #FFF;
+            scroll-snap-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%; /* Ensure content takes the full width of the item */
+            padding: 10px; /* Add padding for spacing inside the item */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+            font-family: sans-serif;
+            font-size: 24px; /* Adjust font size for better responsiveness */
+            font-weight: bold;
+            flex-direction: column; /* Ensure vertical alignment of image and text */
+            text-align: center; /* Center text */
+        }
+
+        .Content img {
+            max-width: 80%;
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Space between image and text */
+            object-fit: cover;
+        }
+
+        .List-wrapper {
+            position: relative;
+        }
+
+        .Button {
+            position: absolute;
+            top: 50%;
+            width: 3rem;
+            height: 3rem;
+            transform: translateY(-50%);
+        }
+
+        .Button--previous {
+            left: 1.5rem;
+            transform: rotate(180deg);
+        }
+
+        .Button--next {
+            right: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <section id="Certifications">
+        <p class="section__text__p1">Scroll through my Certifications</p>
+        <h1 class="title">Certifications</h1>
+        <div class="List-wrapper">
+            <ul class="List">
+                <li class="Item">
+                    <div class="Content">
+                        <img src="assets/IMG_4321.jpg" alt="Item 1 Image" class="item-image"/>
+                        <span>Item 1</span>
+                    </div>
+                </li>
+                <li class="Item">
+                    <div class="Content">
+                        <img src="assets/IMG_7504.jpg" alt="Item 2 Image" class="item-image"/>
+                        <span>Item 2</span>
+                    </div>
+                </li>
+                <li class="Item">
+                    <div class="Content">
+                        <img src="assets/IMG_7687.jpg" alt="Item 3 Image" class="item-image"/>
+                        <span>Item 3</span>
+                    </div>
+                </li>
+                <li class="Item">
+                    <div class="Content">
+                        <img src="path/to/image4.jpg" alt="Item 4 Image" class="item-image"/>
+                        <span>Item 4</span>
+                    </div>
+                </li>
+                <li class="Item">
+                    <div class="Content">
+                        <img src="path/to/image5.jpg" alt="Item 5 Image" class="item-image"/>
+                        <span>Item 5</span>
+                    </div>
+                </li>
+            </ul>
+            <button onclick="handleClick('previous')" class="Button Button--previous" type="button">➜</button>
+            <button onclick="handleClick('next')" class="Button Button--next" type="button">➜</button>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

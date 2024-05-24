@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="mediaqueries.css"/>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+          width: 70%;
+          margin: auto;
+        }
+        </style>
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Sayali Sanjeevkumar Bhosale</div>
+            <div> 
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Sayali Bhosale</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic-3.png" alt="Sayali Bhosale profile pricture"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Sayali Bhosale</h1>
+                <p class = "section__text__p2">A Passionate Software Engineer With Growth Mindset</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/1V2dHDysRA_XmBNTwpnRjhlG84HGT7JwA/view?usp=drive_link')">
+                        Resume
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/bhosale-sayali/', '_blank')"/>
+                    <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="window.open('https://github.com/SayaliBhosale16', '_blank')"/>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+                </div>
+                <div class="about-details-container">
+                    <div class="text-container">
+                        <p style="text-align: justify; padding-top: 6rem;">I am a computer science student with a love for coding, problem-solving and continuous learning. I'm eager to explore different domains and make an impact through my coding expertise.
+                        Proficient in Java, Python and database management systems like MySQL and NoSQL with deep understanding of distributed systems and computer networking.
+                        Here's what sets me apart: 
+                        Problem-Solving Skills
+                        - Strong communication skills
+                        - Collaborative Spirit
+                        </p>
+                    </div>
+                    <div class="about-containers">
+                        <!-- <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                            <h3>Experience</h3>
+                            <p>2+ years <br/>Software Development</p>
+                        </div> -->
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                            <h3>Education</h3>
+                            <p>University Central Florida : M.S. in Computer Science</p>
+                            <p>University of Pune : B.E. in Computer Science</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">University Central Florida</h2>
+                        <div class="article-container">
+                            <p class="section__text__p2">Graduate Teaching Assistant, Jan'23 - Present</p>
+                            <ul style="text-align: justify; color: rgb(85, 85, 85);">
+                                <li>Course: UCF COP 4600 : Operating Systems</li>
+                                <li>Assisted in developing course materials, including assignments, lab exercises, and exams. Also, helped the professor conducting labs.</li>
+                                <li>Mentored the students in understanding concepts related to process management, memory management, file systems, and networking.</li>
+                                <li>Used with Shell scripting for automating administrative tasks and system management in a Unix/Linux environment.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Add another details-container for the second experience -->
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Accenture</h2>
+                        <div class="article-container">
+                            <p class="section__text__p2">Associate Software Engineer, Aug'21 - Aug'22</p>
+                            <ul style="text-align: justify; color: rgb(85, 85, 85);">
+                                <li>Revamped end-to-end API development of Virgin Media’s core transaction processing platform by migrating 10+ legacy SOAP APIs to modern RESTful APIs using Spring Boot, and guaranteed code quality through comprehensive JUnit tests covering over 500 test cases and achieving 96% code coverage. </li>
+                                <li>Collaborated with a global team of 40+ developers under the billing domain, addressing Regression failures, gathering requirements, and implementing fixes using Java.</li>
+                                <li>Engaged in designing and implementing a CI/CD pipeline using Jenkins and Azure DevOps, following Agile methodologies for streamlined deployment.</li>
+    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <!-- Additional containers for two more experiences -->
+                <div class="about-containers">
+                    <div class="details-container">
+                        <!-- Content for the third experience -->
+                        <h2 class="experience-sub-title">The Magic Data</h2>
+                        <div class="article-container">
+                            <p class="section__text__p2">Data Modeler Intern, May'21 - Jun'21</p>
+                            <ul style="text-align: justify; color: rgb(85, 85, 85);">
+                                <li>Conducted exploratory data analysis on extensive time series datasets with 2000 rows, identifying trends and patterns in Bitcoin prices and associated market variables.</li>
+                                <li>Created Bitcoin price prediction models employing statistical techniques and machine learning algorithms, yielding forecasting accuracy of up to 93%. </li>
+                                <li>Also, designed analytical dashboards using Tableau to effectively communicate the derived insights.</li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <!-- Content for the fourth experience -->
+                        <h2 class="experience-sub-title">Iogreen Solutions</h2>
+                        <div class="article-container">
+                            <p class="section__text__p2">Software Development Intern, Oct'20 - Mar'21</p>
+                            <ul style="text-align: justify; color: rgb(85, 85, 85);">
+                                <li>Built 30 user-friendly screens using HTML, CSS, and JavaScript, constituting 40% of the entire Logistic Management project and integrating APIs for enhanced functionality, contributing to a threefold increase in user accessibility.</li>
+                                <li>Designed custom graphics, integrated interactive features, and devised responsive layouts, leading to a threefold increase (300%) in user accessibility.</li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+        </section>
+        
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/recsys.jpg" alt="Project 1" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">Intelligent Retail Cross-Sell Recommender System</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/SayaliBhosale16/Machine_Learning', '_blank')" >Github</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/ecom.png" alt="Project 2" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">E-commerce Platform usin SpringBoot, Spring Data JPA and Spring Security</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/SayaliBhosale16/Developer', '_blank')">Github</button>
+
+                            
+                        </div>
+                    </div>
+
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/group.jpg" alt="Project 2" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            LiveWire: Messaging App using SpringBoot and websocktets</h2>
+                        <div class="btn-container">
+                            
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('hhttps://github.com/SayaliBhosale16/GroupChat', '_blank')">Github</button>                            
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/school.png" alt="Project 2" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">Real-Time School Catalog: Backend with Spring Boot and JDBC</h2>
+                        <div class="btn-container">
+                            
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('hhttps://github.com/SayaliBhosale16/GroupChat', '_blank')">Github</button>                            
+                        </div>
+                    </div>
+
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/complaint.png" alt="Project 3" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">Civil Complaints Management System</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/SayaliBhosale16/ComplaintsWizard', '_blank')">Github</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+        </section>
+
+        
+     <!--   <section id="Certifications">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">Certifications</h1>
+            <div class="carousel-section">
+                <div class="carousel" style= "width: 50%; overflow: hidden">
+                  <div class="carousel-inner" style="  display: flex; transition: transform 0.5s ease">
+                    <div class="carousel-item active" style="flex: 0 0 auto;">
+                      <img src="assets/IMG_7504.jpg" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item" style="flex: 0 0 auto;">
+                      <img src="assets/IMG_4321.jpg" alt="Slide 2">
+                    </div> -->
+                    <!-- Add more carousel items as needed -->
+                 <!-- </div>
+                </div>
+              
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+            </div>
+              
+            </section> -->
+            <section id="Certifications">
+                <p class="section__text__p1">Scroll through my Certifications</p>
+                <h1 class="title" style="padding-bottom: 1.5rem;">Certifications</h1>
+                <div class="detailss-container" style="max-height: 70vh;">
+                <div class="List-wrapper">
+                    <ul class="List">
+                        <li class="Item"><div class="Content">
+                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/SayaliBhosale-4508/4594C67A9CD03895?sharingId=CE9D2CE65587F70C" target="_blank"><img src="assets/AZ.png" alt="Item 1 Image" class="item-image"/></a></div></li>
+
+                        <li class="Item"><div class="Content">
+                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/SayaliBhosale-4508/AA540AD93B4F236B?sharingId=CE9D2CE65587F70C" target="_blank"><img src="assets/AI.png" alt="Item 1 Image" class="item-image"/></a></div></li>
+                        
+                        <li class="Item"><div class="Content">
+                          <a href="https://www.credly.com/badges/8928218a-1f99-49e5-80d0-d935a315c0da" target="_blank"><img src="assets/javascript.png" alt="Item 1 Image" class="item-image"/></a></div></li>
+
+
+                        <li class="Item"><div class="Content">
+                            <a href="https://www.linkedin.com/in/bhosale-sayali/details/certifications/" target="_blank"><img src="assets/auto.png" alt="Item 1 Image" class="item-image"/></a></div></li>
+
+
+
+                        <li class="Item"><div class="Content">
+                            <a href="https://www.irjet.net/archives/V8/i6/IRJET-V8I655.pdf" target="_blank"><img src="assets/IRJET.jpg" alt="Item 1 Image" class="item-image"/></a></div></li>
+
+                        <li class="Item"><div class="Content">
+                            <a href="https://google.com/" target="_blank"><img src="assets/java.png" alt="Item 1 Image" class="item-image"/></a></div></li>
+                    </ul>
+                    <button onclick="handleClick('previous')" class="Button Button--previous" type="button">➜</button>
+                    <button onclick="handleClick('next')"class="Button Button--next" type="button">➜</button>
+                </div>
+               </div>
+                <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+            </section>
+            <script>
+                const list = document.querySelector(".List");
+              
+                // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
+                const item = document.querySelector(".Item");
+                const itemWidth = item.offsetWidth;
+              
+                function handleClick(direction) {
+                  // Based on the direction we call `scrollBy` with the item width we got earlier
+                  if(direction === "previous") {
+                    list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+                  } else {
+                    list.scrollBy({ left: itemWidth, behavior: "smooth" });
+                  }
+                }
+              </script>
+
+
+        
+
+        <section id="contact" style="padding-top: 40rem;">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                    <p><a href="mailto:sayali.bhosale@ucf.edu">sayali.bhosale@ucf.edu</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                    <p><a href="https://www.linkedin.com/in/bhosale-sayali/" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div style="border: 0.5rem; padding-top: 15rem;">
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#Certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+            <p>Copyright &#169; 2024 Sayali Bhosale. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
